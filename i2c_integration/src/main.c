@@ -62,8 +62,8 @@ void setup(void){
     uart_set_format(UART_ID,DATA_BITS,STOP_BITS,PARITY);
 
     // I2C Setup
-    i2c_init(i2c1, 10000);
-    i2c_set_slave_mode(i2c1,true,I2C_ADDR);
+    i2c_init(i2c0, 10000);
+    i2c_set_slave_mode(i2c0,true,I2C_ADDR);
     gpio_set_function(4,GPIO_FUNC_I2C);
     gpio_set_function(5,GPIO_FUNC_I2C);
     gpio_pull_up(4);
