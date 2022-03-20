@@ -80,7 +80,7 @@ int main(void)
     while (true){
         // recieve data from controller
         // 3 bytes recieved - byte 0 is cmd (used as lower byte) byte 2 is higher - byte 3 is 0
-        if (i2c_get_read_available(i2c1) < 3){
+        if (i2c_get_read_available(i2c0) < 3){
             continue;
         } 
 
