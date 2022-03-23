@@ -235,7 +235,7 @@ void uart_isq_handler() {
         // If we have read in the start identifier into the Data_Start buffer
         if ((Data_Start[0] == Start_Bit_Pattern[0] && Data_Start[1] == Start_Bit_Pattern[1]))
         {
-            //Blink LED on Data Received
+            // Blink LED on Data Received
             if (gpio_get_out_level(LED_PIN)  == true)
             {
                 gpio_put(LED_PIN, 0);
