@@ -95,9 +95,9 @@ volatile uint8_t register_accessed;
 
 
 
-#define UART_RX 17
-#define UART_TX 16
-#define UART_ID uart0
+#define UART_RX 8
+#define UART_TX 9
+#define UART_ID uart1
 
 
 
@@ -344,9 +344,9 @@ int main() {
     uart_set_format(UART_ID, 8, 1, 0);
 
     // And set up and enable the interrupt handlers
-    irq_set_exclusive_handler(UART0_IRQ, uart_isq_handler);
-    irq_set_priority(UART0_IRQ, 10);
-    irq_set_enabled(UART0_IRQ, true);
+    irq_set_exclusive_handler(UART1_IRQ, uart_isq_handler);
+    irq_set_priority(UART1_IRQ, 10);
+    irq_set_enabled(UART1_IRQ, true);
 
     // Now enable the UART to send interrupts - RX only
     uart_set_irq_enables(UART_ID, true, false);
