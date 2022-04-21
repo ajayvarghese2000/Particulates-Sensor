@@ -26,6 +26,7 @@
 	<a href="https://github.com/lboroWMEME-TeamProject/ai-cam"><img src="https://i.imgur.com/30bEKvR.png" alt="drawing" height = 33/></a>
 </p>
 
+------------
 
 # Particulates-Sensor
 
