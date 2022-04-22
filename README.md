@@ -81,7 +81,7 @@ The first register at location **0x00** holds the device address of the connecte
 
 This is sent as 2 I2C Data packets when accessed however the first 8 bits can be ignored as I2C slaves can only take 8 bit address values.
 <p align="center">
-	<table max-width=100%;>
+	<table>
 		<thead>
 			<tr>
 				<th align="center">Bit 15</th>
@@ -144,15 +144,56 @@ When the data is received you must reconstruct the data packets to get the actua
 `PMS5003_Example.py` contains code that allows you to reconstruct the bits as well as initialise the I2C PMS5003 Sensor.
 
 <p align="center">
-
-|15|14|13|12|11|10|09|08|
-|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-|PM1.15|PM1.14|PM1.13|PM1.12|PM1.11|PM1.10|PM1.09|PM1.08|
-
-|07|06|05|04|03|02|01|00|
-|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-|PM1.07|PM1.06|PM1.05|PM1.04|PM1.03|PM1.02|PM1.01|PM1.00|
-
+	<table>
+		<thead>
+			<tr>
+				<th align="center">Bit 15</th>
+				<th align="center">Bit 14</th>
+				<th align="center">Bit 13</th>
+				<th align="center">Bit 12</th>
+				<th align="center">Bit 11</th>
+				<th align="center">Bit 10</th>
+				<th align="center">Bit 09</th>
+				<th align="center">Bit 08</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td align="center">PM1.15</td>
+				<td align="center">PM1.14</td>
+				<td align="center">PM1.13</td>
+				<td align="center">PM1.12</td>
+				<td align="center">PM1.11</td>
+				<td align="center">PM1.10</td>
+				<td align="center">PM1.09</td>
+				<td align="center">PM1.08</td>
+			</tr>
+		</tbody>
+		<thead>
+			<tr>
+				<th align="center">Bit 07</th>
+				<th align="center">Bit 06</th>
+				<th align="center">Bit 05</th>
+				<th align="center">Bit 04</th>
+				<th align="center">Bit 03</th>
+				<th align="center">Bit 02</th>
+				<th align="center">Bit 01</th>
+				<th align="center">Bit 00</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td align="center">PM1.07</td>
+				<td align="center">PM1.06</td>
+				<td align="center">PM1.05</td>
+				<td align="center">PM1.04</td>
+				<td align="center">PM1.03</td>
+				<td align="center">PM1.02</td>
+				<td align="center">PM1.01</td>
+				<td align="center">PM1.00</td>
+			</tr>
+		</tbody>
+	</table>
 </p>
 
 ### 0x02
@@ -166,15 +207,56 @@ When the data is received you must reconstruct the data packets to get the actua
 `PMS5003_Example.py` contains code that allows you to reconstruct the bits as well as initialise the I2C PMS5003 Sensor.
 
 <p align="center">
-
-|15|14|13|12|11|10|09|08|
-|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-|PM2.5.15|PM2.5.14|PM2.5.13|PM2.5.12|PM2.5.11|PM2.5.10|PM2.5.09|PM2.5.08|
-
-|07|06|05|04|03|02|01|00|
-|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-|PM2.5.07|PM2.5.06|PM2.5.05|PM2.5.04|PM2.5.03|PM2.5.02|PM2.5.01|PM2.5.00|
-
+	<table>
+		<thead>
+			<tr>
+				<th align="center">Bit 15</th>
+				<th align="center">Bit 14</th>
+				<th align="center">Bit 13</th>
+				<th align="center">Bit 12</th>
+				<th align="center">Bit 11</th>
+				<th align="center">Bit 10</th>
+				<th align="center">Bit 09</th>
+				<th align="center">Bit 08</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td align="center">PM2.5.15</td>
+				<td align="center">PM2.5.14</td>
+				<td align="center">PM2.5.13</td>
+				<td align="center">PM2.5.12</td>
+				<td align="center">PM2.5.11</td>
+				<td align="center">PM2.5.10</td>
+				<td align="center">PM2.5.09</td>
+				<td align="center">PM2.5.08</td>
+			</tr>
+		</tbody>
+		<thead>
+			<tr>
+				<th align="center">Bit 07</th>
+				<th align="center">Bit 06</th>
+				<th align="center">Bit 05</th>
+				<th align="center">Bit 04</th>
+				<th align="center">Bit 03</th>
+				<th align="center">Bit 02</th>
+				<th align="center">Bit 01</th>
+				<th align="center">Bit 00</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td align="center">PM2.5.07</td>
+				<td align="center">PM2.5.06</td>
+				<td align="center">PM2.5.05</td>
+				<td align="center">PM2.5.04</td>
+				<td align="center">PM2.5.03</td>
+				<td align="center">PM2.5.02</td>
+				<td align="center">PM2.5.01</td>
+				<td align="center">PM2.5.00</td>
+			</tr>
+		</tbody>
+	</table>
 </p>
 
 ### 0x03
@@ -188,15 +270,56 @@ When the data is received you must reconstruct the data packets to get the actua
 `PMS5003_Example.py` contains code that allows you to reconstruct the bits as well as initialise the I2C PMS5003 Sensor.
 
 <p align="center">
-
-|15|14|13|12|11|10|09|08|
-|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-|PM10.15|PM10.14|PM10.13|PM10.12|PM10.11|PM10.10|PM10.09|PM10.08|
-
-|07|06|05|04|03|02|01|00|
-|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-|PM10.07|PM10.06|PM10.05|PM10.04|PM10.03|PM10.02|PM10.01|PM10.00|
-
+	<table>
+		<thead>
+			<tr>
+				<th align="center">Bit 15</th>
+				<th align="center">Bit 14</th>
+				<th align="center">Bit 13</th>
+				<th align="center">Bit 12</th>
+				<th align="center">Bit 11</th>
+				<th align="center">Bit 10</th>
+				<th align="center">Bit 09</th>
+				<th align="center">Bit 08</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td align="center">PM10.15</td>
+				<td align="center">PM10.14</td>
+				<td align="center">PM10.13</td>
+				<td align="center">PM10.12</td>
+				<td align="center">PM10.11</td>
+				<td align="center">PM10.10</td>
+				<td align="center">PM10.09</td>
+				<td align="center">PM10.08</td>
+			</tr>
+		</tbody>
+		<thead>
+			<tr>
+				<th align="center">Bit 07</th>
+				<th align="center">Bit 06</th>
+				<th align="center">Bit 05</th>
+				<th align="center">Bit 04</th>
+				<th align="center">Bit 03</th>
+				<th align="center">Bit 02</th>
+				<th align="center">Bit 01</th>
+				<th align="center">Bit 00</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td align="center">PM10.07</td>
+				<td align="center">PM10.06</td>
+				<td align="center">PM10.05</td>
+				<td align="center">PM10.04</td>
+				<td align="center">PM10.03</td>
+				<td align="center">PM10.02</td>
+				<td align="center">PM10.01</td>
+				<td align="center">PM10.00</td>
+			</tr>
+		</tbody>
+	</table>
 </p>
 
 
