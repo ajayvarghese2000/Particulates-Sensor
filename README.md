@@ -81,7 +81,7 @@ The first register at location **0x00** holds the device address of the connecte
 
 This is sent as 2 I2C Data packets when accessed however the first 8 bits can be ignored as I2C slaves can only take 8 bit address values.
 <p align="center">
-	<table>
+	<table max-width=100%;>
 		<thead>
 			<tr>
 				<th align="center">Bit 15</th>
