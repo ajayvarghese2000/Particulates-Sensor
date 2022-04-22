@@ -349,13 +349,14 @@ The I2C Loop takes priority over the UART Loop.
 
 ## Test Plan
 
-*to be added*
-
 <div align="center">
 
 |Objective|Testing Strategy|Expected Output|Current Output|Pass/Fail|
 |--|--|--|--|:--:|
-
+|PMS53003 Detects changes in the air quality and outputs the correct data to the UART console|Run code to get the raw data from the PMS sensor onto a serial monitor; once the particulates data has settled spray some deodorant and monitor the particulates per m³ data.|Once turned on the sensor output should settle to a consistent value. Then when the deodorant is sprayed the number of particulates per meter³ should increase|Once switched on the value does settle to a consistent value and when the deodorant is sprayed the value does increase.|:heavy_check_mark:|
+|The PMS5003 should send its data to the Pi Pico and the data should be received successfully by the Pico|Connect the PMS sensor to the Pico's UART pins and run code on the Pico to output the data to the serial monitor.|The data from the PMS sensor should show up on screen and it should pass all CRC checks|The data is sent and received correctly|:heavy_check_mark:|
+|Raspberry Pi Pico sends CPM to the Raspberry Pi 4 (master).| Obtain values from I2C bus and check the data correlates with the data collected from previous two tests.|Correct data should display in C program window.|Correct data is displayed.|:heavy_check_mark:|
+|Correct data is being sent to GUI.|Observe data is bring printed in GUI. Ensure data corresponds with previously collected data to calibrate against.|Data on GUI should appear and correlate with expected results.|Correct data is displayed.|:heavy_check_mark:|
 </div>
 
 ------------
