@@ -144,7 +144,7 @@ When the data is received you must reconstruct the data packets to get the actua
 `PMS5003_Example.py` contains code that allows you to reconstruct the bits as well as initialise the I2C PMS5003 Sensor.
 
 <p align="center">
-	<table>
+	<table align="center">
 		<thead>
 			<tr>
 				<th align="center">Bit 15</th>
@@ -207,7 +207,7 @@ When the data is received you must reconstruct the data packets to get the actua
 `PMS5003_Example.py` contains code that allows you to reconstruct the bits as well as initialise the I2C PMS5003 Sensor.
 
 <p align="center">
-	<table>
+	<table align="center">
 		<thead>
 			<tr>
 				<th align="center">Bit 15</th>
@@ -270,7 +270,7 @@ When the data is received you must reconstruct the data packets to get the actua
 `PMS5003_Example.py` contains code that allows you to reconstruct the bits as well as initialise the I2C PMS5003 Sensor.
 
 <p align="center">
-	<table>
+	<table align="center">
 		<thead>
 			<tr>
 				<th align="center">Bit 15</th>
